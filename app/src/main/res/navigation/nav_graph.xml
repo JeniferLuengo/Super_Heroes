@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.example.super_hero.FirstFragment"
+        android:name="com.example.super_hero.ui.FirstFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_first">
 
@@ -17,12 +17,24 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.example.super_hero.SecondFragment"
+        android:name="com.example.super_hero.ui.SecondFragment"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        tools:layout="@layout/info_hero_list">
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_mailFragment"
+            app:destination="@id/mailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mailFragment"
+        android:name="com.example.super_hero.mailFragment"
+        android:label="fragment_mail"
+        tools:layout="@layout/fragment_mail" >
+        <action
+            android:id="@+id/action_mailFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
     </fragment>
 </navigation>
