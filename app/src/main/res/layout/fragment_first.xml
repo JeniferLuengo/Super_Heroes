@@ -23,6 +23,7 @@
         android:layout_marginTop="16dp"
         android:text="Busca y Selecciona a tú Super Heroe Favorito"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/rvHero" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -54,8 +54,9 @@ class SecondFragment : Fragment() {
         binding.punisher.setOnClickListener{
             findNavController().navigate(R.id.action_SecondFragment_to_mailFragment)
         }
+
     }
-}
+    }
 
 
 

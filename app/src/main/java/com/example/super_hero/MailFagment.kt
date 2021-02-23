@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.super_hero.databinding.FragmentMailBinding
 
-class mailFagment: Fragment()  {
+class MailFagment: Fragment()  {
 
 
 

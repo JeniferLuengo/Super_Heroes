@@ -26,6 +26,7 @@ class HeroAdapter : RecyclerView.Adapter<HeroAdapter.HeroViewHolder>() {
         fun bind(hero: SuperHero) {
 
             binding.textViewName.text = hero.name
+            Glide.with(binding.Imagev1).load(hero.images).into(binding.Imagev1)
             itemView.setOnClickListener(this)
 
         }

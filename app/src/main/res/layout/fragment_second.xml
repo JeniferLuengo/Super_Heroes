@@ -8,12 +8,12 @@
 
     <ImageView
         android:id="@+id/image2"
-        android:layout_width="0dp"
-        android:layout_height="188dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/aliases"
+        android:layout_width="367dp"
+        android:layout_height="244dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:src="@tools:sample/avatars" />
@@ -22,74 +22,87 @@
         android:id="@+id/nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="60dp"
+        android:layout_marginStart="43dp"
         android:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/fullName"
-        app:layout_constraintEnd_toStartOf="@+id/tvName2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.844" />
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvName2"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/fullName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginStart="43dp"
         android:text="FullName"
-        app:layout_constraintBottom_toTopOf="@+id/aliases"
-        app:layout_constraintStart_toEndOf="@+id/image2" />
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvFullName2"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/aliases"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="54dp"
-        android:layout_marginBottom="276dp"
+        android:layout_marginStart="43dp"
         android:text="Aliases"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/tvAlias2"
-        app:layout_constraintStart_toEndOf="@+id/image2" />
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvAlias2"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/tvName2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="288dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="67dp"
         android:text="textoName"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/tvFullName2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toStartOf="@+id/tvFullName2" />
 
     <TextView
         android:id="@+id/tvFullName2"
-        android:layout_width="79dp"
-        android:layout_height="37dp"
-        android:layout_marginBottom="60dp"
-        app:layout_constraintBottom_toTopOf="@+id/tvAlias2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.325"
+        android:layout_width="101dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginBottom="276dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/fullName" />
 
     <TextView
         android:id="@+id/tvAlias2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="47dp"
-        android:layout_marginBottom="276dp"
+        android:layout_marginTop="27dp"
         android:text="textoAlias"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/aliases" />
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/tvFullName2"
+        app:layout_constraintTop_toBottomOf="@+id/tvFullName2" />
 
     <ImageButton
         android:id="@+id/punisher"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="34dp"
+        android:layout_marginEnd="33dp"
         android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
         app:srcCompat="@drawable/ic__17_punisher" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="176dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginEnd="33dp"
+        android:text="Haz Click en Punisher"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/punisher"
+        app:layout_constraintEnd_toStartOf="@+id/punisher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/punisher" />
 </androidx.constraintlayout.widget.ConstraintLayout>

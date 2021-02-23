@@ -19,7 +19,7 @@
         android:id="@+id/SecondFragment"
         android:name="com.example.super_hero.ui.SecondFragment"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/info_hero_list">
+        tools:layout="@layout/fragment_second">
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
@@ -30,7 +30,7 @@
     </fragment>
     <fragment
         android:id="@+id/mailFragment"
-        android:name="com.example.super_hero.mailFragment"
+        android:name="com.example.super_hero.MailFagment"
         android:label="fragment_mail"
         tools:layout="@layout/fragment_mail" >
         <action
